@@ -7,6 +7,7 @@
 可以 git commit -m "更新的信息"  来提交
 提交成功后 可以查看日志 git log
 撤销更改 git checkout -- . 
+再之后，你只需要将你的代码，放到库的对应的文件夹中，然后使用，git add 、git commit -m "   " 、最后git push origin master，将你的代码提交就可以了。
 
 
 
