@@ -1,0 +1,33 @@
+1，如果中文文件的名称乱码 输入git config --global core.quotepath false
+输入git init 初始化仓库
+输入git status  查看状态
+输入git add "测试文本.txt"   上传此文件
+
+        或 git  add -A       上传此目录下所有文件
+可以 git commit -m "更新的信息"  来提交
+提交成功后 可以查看日志 git log
+撤销更改 git checkout -- . 
+
+
+
+版本恢复
+
+输入 git reflog  查看之前版本
+
+
+删除未跟踪的文件
+
+输入命令 git clean -xf  会删除未跟踪的文件 就是没有上传过的文件
+
+ssh路径
+/c/Users/HP/.ssh/id_rsa
+
+复制ssh key
+
+  方法1: 输入 clip < ~/.ssh/id_rsa.pub   会自动复制ssh key，可以直接粘贴
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDi13luBqzwjlg95bmQfmAVxBl9UogClJF1jOFt/NEW9XEJwebSxTn0dxgSNxMk5NkS2UR52OLrJVt2Ty2IMlKHctqfcxV6x7mSGsegtcaIPJy+O72Iv/DeHvZwCLLTzKQtzZO6x9XKUZAvVfFYzTgTjcQ9uSp2p8+jL2spAx4TRK1OOWPbcdF3KLqVYC5v4wQc+QE6WbOtENSAyh7Qy0WqQCOpz9YmClwS8PxiMCdAXiffMmmfM+sO3Ht4Co9tt41W9lvMS3TvaDBuoRLf5gqwiahq5bzIsDlf6yq7773EAOxwlOyzVtRi5S1TwscxRq4TBUoJ4c8ZjMFRUjHpN9g/MVeHoPgVNabwc03pgFdSXIjIF5GD4bn/jP2xK0sux5rx8Z7HdcXN/Qp8oAifUulZpqTDS/RWCZFL/MN8a/8MkILsKn6nNs4F+rCUHmJEPCRGKlO4XtDgRMLCN03pDqekNpmQdK9+SEPhneymNZDG3CrEIis6VW1veRx+3TLTiG0= 2200793792@qq.com
+
+然后测试连接是否成功
+
+输入: ssh -T git@github.com 
